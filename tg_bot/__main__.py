@@ -20,7 +20,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 Hi {}, my name is {}! . I'm So Glad that you decided to use me.. 😉 use /help command if you any doubts about how to use me or you can freely ask at @mariebotmalayalamsupport 😊
 
-I'm a group manager bot maintained by [This Sweety](tg://user?id={}). I'm built in python3, using the \
+I'm a group manager bot maintained by [This Chweety 😍](tg://user?id={}). I'm built in python3, using the \
 python-telegram-bot library, and am fully opensource - you can find what makes me tick \
 [here](github.com/achuzz/tgbot)
 
@@ -48,7 +48,7 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/AbinPaulZachariah) to get me to where I am now, and every donation helps \
+It took lots of work for [my creator](t.me/AbinPaulZackariah) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer . He's just a poor student, so every little helps! For Donations Contact Him [Here](t.me/K1DD0SC4LLM3NOOB)."""
 
 IMPORTED = {}
