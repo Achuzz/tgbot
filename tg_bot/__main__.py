@@ -1,3 +1,4 @@
+
 import importlib
 import re
 from typing import Optional, List
@@ -18,14 +19,13 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}! . I'm So Glad that you decided to use me.. 😉 use /help command if you any doubts about how to use me or you can freely ask at @mariebotmalayalamsupport 😊
-
-I'm a group manager bot maintained by [This ChwEEty😍](tg://user?id={}.I'm built in python3, using the \
+Hi {}, my name is {}! If you have any questions on how to use me, read /help - and then head to @MarieBotmalayalamSupport.
+I'm a group manager bot maintained by [This ChwEEtY😍](tg://user?id={}). I'm built in python3, using the \
 python-telegram-bot library, and am fully opensource - you can find what makes me tick \
-[here](github.com/achuzz/tgbot)
-
+[here](github.com/Achuzz/tgbot)!
+Feel free to submit pull requests on github, or to contact my support group, @MarieBotMalayalamSupport, with any bugs, questions \
+or feature requests you might have :)
 You can find the list of available commands with /help.
-
 If you're enjoying using me, and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
 """
 
@@ -33,7 +33,6 @@ HELP_STRINGS = """
 Hey there! My name is *{}*.
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
 the things I can help you with.
-
 *Main* commands available:
  - /start: start the bot
  - /help: PM's you this message.
@@ -42,14 +41,13 @@ the things I can help you with.
  - /settings:
    - in PM: will send you your settings for all supported modules.
    - in a group: will redirect you to pm, with all that chat's settings.
-
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 It took lots of work for [my creator](t.me/AbinPaulZackariah) to get me to where I am now, and every donation helps \
-motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer . He's just a poor student, so every little helps! For Donations Contact Him [Here](t.me/K1DD0SC4LLM3NOOB)."""
+motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \. He's just a poor student, so every little helps!."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -429,7 +427,7 @@ def main():
 
     if WEBHOOK:
         LOGGER.info("Using webhooks.")
-        updater.start_webhook(listen="0.0.0.0",
+        updater.start_webhook(listen="127.0.0.1",
                               port=PORT,
                               url_path=TOKEN)
 
