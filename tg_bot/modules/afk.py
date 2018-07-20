@@ -22,7 +22,7 @@ def afk(bot: Bot, update: Update):
         reason = ""
 
     sql.set_afk(update.effective_user.id, reason)
-    update.effective_message.reply_text("{} നോക്കണ്ടടാ ഉണ്ണീ... ഓൻ ഈടെ ഇല്ല 😝😝🤒".format(update.effective_user.first_name))
+    update.effective_message.reply_text("{}കീബോർഡിൽ നിന്നും അകലെ ആണ്...😋😋".format(update.effective_user.first_name))
 
 
 @run_async
